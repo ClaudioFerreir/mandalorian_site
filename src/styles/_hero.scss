@@ -1,0 +1,49 @@
+@use 'variaveis';
+
+.hero {
+  padding: 5.6vw;
+  min-height: 80vw;
+  background-image: url("/dist/images/hero\ _banner.png");
+  background-repeat: no-repeat;
+  background-position: right top;
+
+  @media (max-width: 1024px) {
+    margin: 0 auto;
+    background-size: contain;
+    background-position: left top;
+  }
+  
+  &__content {
+    max-width: 20%;
+    text-align: center;
+    margin-top: 3.5vw;
+    
+    @media (max-width: 1024px) {
+      display: none;
+    }
+
+    img {
+      margin: 0 auto;
+      width: 100%;
+      border-radius: 8px;
+    }
+
+    button {
+      display: block;
+      width: 100%;
+      height: 40px;
+      font-size: 18px;
+      color: variaveis.$corTextoSecundario;
+      background-color: #6421ff;
+      text-transform: uppercase;
+      border-radius: 4px;
+      margin-top: 2vw;
+      margin-bottom: .5vw;
+      border: none;
+
+      &:hover {
+        background-color: lighten(#6421ff, 5%);
+      }
+    }
+  }
+}
