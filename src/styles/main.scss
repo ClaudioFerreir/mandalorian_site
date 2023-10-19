@@ -1,5 +1,11 @@
-$bgColor:  rgb(50, 170, 100);
+@use 'variaveis';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 body {
-  background-color: $bgColor;
+  background-color: variaveis.$corDeFundo;
 }
