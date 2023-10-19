@@ -1,6 +1,18 @@
 @use 'variaveis';
 @use 'hero';
 
+@font-face {
+  font-family: Mandalore;
+  src: url(../../assets/fonts/mandalore.ttf);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: MandaloreExpand;
+  src: url(../../assets/fonts/mandalorexpand.ttf);
+  font-weight: 700;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -13,6 +25,8 @@ a {
 
 body {
   background-color: variaveis.$corDeFundo;
+  font-family: Mandalore, sans-serif;
+  letter-spacing: 2px;
 }
 
 @mixin text($fontSize: 16px) {
