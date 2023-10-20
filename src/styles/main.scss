@@ -1,6 +1,7 @@
 @use 'variaveis';
 @use 'hero';
 @use 'info';
+@use 'shows';
 
 @font-face {
   font-family: Mandalore;
@@ -18,6 +19,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: Mandalore, sans-serif;
 }
 
 a {
@@ -26,7 +28,6 @@ a {
 
 body {
   background-color: variaveis.$corDeFundo;
-  font-family: Mandalore, sans-serif;
   letter-spacing: 2px;
 }
 
