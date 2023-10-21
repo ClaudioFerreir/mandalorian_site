@@ -37,6 +37,8 @@
       &__answer {
         height: 0;
         overflow: hidden;
+        padding: 0 24px;
+        transition: height, .5s ease;
       }
 
       &--is-open {
@@ -50,6 +52,7 @@
           height: auto;
           padding: 24px;
           padding-top: 0;
+          transition: height, .5s ease;
         }
       }
     }
