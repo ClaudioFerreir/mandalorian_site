@@ -2,6 +2,16 @@ document.addEventListener('DOMContentLoaded', function() {
   const buttons = document.querySelectorAll('[data-tab-button]');
   const questions = document.querySelectorAll('[data-faq-question]');
   
+  const heroSection = document.querySelector('.hero');
+  const heroHeight = heroSection.clientHeight;
+
+  window.addEventListener('scroll', function() {
+    const position = this.window.scrollY;
+
+    position < heroHeight ? hiddenElements() : showElements();
+  })
+  
+  //tabs secction (shows)
   for (let i = 0; i < buttons.length; i++) {
     buttons[i].addEventListener('click', function (button) {
       const tabTarget = button.target.dataset.tabButton;
@@ -13,10 +23,21 @@ document.addEventListener('DOMContentLoaded', function() {
     })
   }
 
+  //faq section, accordion
   for (let i = 0; i < questions.length; i++) {
     questions[i].addEventListener('click', toggleAnswer);
   }
 })
+
+function hiddenElements() {
+  const header = document.querySelector('.header');
+  header.classList.add('header--is-hidden');
+}
+
+function showElements() {
+  const header = document.querySelector('.header');
+  header.classList.remove('header--is-hidden');
+}
 
 function toggleAnswer(element) {
   const targetClass = 'faq__questions__item--is-open';
