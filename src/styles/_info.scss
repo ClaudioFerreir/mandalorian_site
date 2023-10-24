@@ -4,14 +4,22 @@
   h2 {
     text-align: center;
   } 
+
+  @media (max-width: 768px) {
+    h2 {
+      margin-bottom: 15vw;
+    }
+  }
   
   &__content {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 3vw;
-    
+
     @media (max-width: 768px) {
+      margin-bottom: 20vw;
+
       &--image-right {
         flex-direction: column-reverse;
 
@@ -19,10 +27,10 @@
           align-self: flex-end;
         }
       }
-
+      
       &--image-left {
         flex-direction: column;
-
+        
         img {
           align-self: flex-start;
         }
@@ -31,6 +39,10 @@
 
     &__text {
       padding: 3vw;
+
+      @media (max-width: 768px) {
+        padding: 5vw;
+      }
 
       h3 {
         margin-bottom: 2vw;
