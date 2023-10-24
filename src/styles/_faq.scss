@@ -2,6 +2,10 @@
 
 .faq {
   padding: 5.6vw;
+  
+  @media (max-width: 768px) {
+    padding-bottom: 20vw;
+  }
 
   h2 {
     text-align: center;
@@ -31,6 +35,11 @@
           align-items: center;
           font-family: Roboto, sans-serif;
           font-size: 20px;
+
+          @media (max-width: 768px) {
+            top: -35px;
+            right: 5px;
+          }
         }
       }
 
@@ -46,6 +55,11 @@
           content: '-';
           right: 28px;
           font-size: 30px;
+
+          @media (max-width: 768px) {
+            top: -35px;
+            right: 5px;
+          }
         }
 
         .faq__questions__item__answer {

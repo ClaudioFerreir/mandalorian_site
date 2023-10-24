@@ -6,6 +6,10 @@
     width: 100%;
     margin: 0 auto;
     text-align: center;
+
+    @media (max-width: 768px) {
+      padding: 0 6vw 3vw;
+    }
   }
 
   &__logo {
@@ -17,28 +21,37 @@
 
     &__item {
       list-style: none;
-    }
-  }
-}
 
-.language-selector {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+      &--disney-rights {
+        display: flex;
+        align-items: center;
+        justify-content: center;
 
-  img {
-    height: 18px;
-    width: 18px;
-    margin-right: 5px;
-  }
+        @media (max-width: 768px) {
+          flex-direction: column;
+        }
 
-  select {
-    background-color: transparent;
-    border: none;
-    color: variaveis.$corTextoPrincipal;
-
-    &:hover {
-      color: variaveis.$corTextoSecundario;
+        .language-selector {
+          display: flex;
+          align-items: center;
+        }
+      
+        img {
+          height: 18px;
+          width: 18px;
+          margin-right: 5px;
+        }
+      
+        select {
+          background-color: transparent;
+          border: none;
+          color: variaveis.$corTextoPrincipal;
+      
+          &:hover {
+            color: variaveis.$corTextoSecundario;
+          }
+        }
+      }
     }
   }
 }
