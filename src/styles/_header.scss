@@ -8,6 +8,10 @@
   transition: background-color .5s ease;
   padding: 2vw;
 
+  @media (max-width: 1024px) {
+    padding: 1vw 0;
+  }
+
   @media (max-width: 768px) {
     padding: 5vw 0;
   }
