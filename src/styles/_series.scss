@@ -17,8 +17,8 @@
     @media (max-width: 768px) {
       display: grid;
       justify-content: center;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 5vw;
+      grid-template-columns: 1fr;
+      gap: 10vw;
     }
 
     &__item {
